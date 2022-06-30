@@ -3,9 +3,9 @@ package com.dufuna.berlin.dolapoadebanjo.lekki.model;
 import java.util.Date;
 
 public class LekkiProperty {
-   private int propertyId;
-   private String propertyAddress;
-   private String  propertyType;
+    private int propertyId;
+    private String propertyAddress;
+    private String  propertyType;
     private int noOfBedrooms;
     private int noOfSittingRooms;
     private int noOfKitchens;
@@ -117,7 +117,7 @@ public class LekkiProperty {
 
     @Override
     public String toString() {
-        return this.getPropertyId() + ", " + this.getPropertyAddress() + ", " + this.getPropertyId();
+        return "{LekkiProperty: " + this.getPropertyId() + ", " + this.getPropertyAddress() + ", " + this.getPropertyType() + "}" + "\n";
     }
 
     @Override
@@ -128,7 +128,7 @@ public class LekkiProperty {
 
     @Override
     public boolean equals(Object obj) {
-        LekkiProperty ppt = (LekkiProperty) obj;
-     return this.getPropertyId() == ppt.getPropertyId();
+            LekkiProperty ppt = (LekkiProperty) obj;
+            return this.getPropertyId() == ppt.getPropertyId();
     }
 }
